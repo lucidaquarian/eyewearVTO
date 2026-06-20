@@ -1,0 +1,27 @@
+/* Frame switcher rail / scroller — scroll behaviour + hidden scrollbar.
+   Visual styling (borders, rings, radius) lives in the component via Tailwind
+   per DESIGN-PRINCIPLES; only the things Tailwind can't express cleanly are
+   here. */
+
+.frame-switcher {
+  /* Hide the scrollbar tastefully on both axes (Firefox + WebKit). */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* legacy Edge */
+}
+
+.frame-switcher::-webkit-scrollbar {
+  display: none; /* Chrome / Safari */
+}
+
+/* Horizontal scroller (<1024px): snap each card to the start edge. */
+.frame-switcher--horizontal {
+  scroll-snap-type: x mandatory;
+}
+
+.frame-switcher--vertical {
+  scroll-snap-type: y proximity;
+}
+
+.frame-switcher__item {
+  scroll-snap-align: start;
+}

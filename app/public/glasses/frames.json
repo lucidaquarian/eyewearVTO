@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sunglasses",
+    "name": "Sunglasses",
+    "modelUrl": "/glasses/sunglasses.glb",
+    "thumbUrl": "/glasses/thumbs/sunglasses.png",
+    "attribution": {
+      "creator": "User upload",
+      "license": "CC0-1.0",
+      "sourceUrl": ""
+    }
+  },
+  {
+    "id": "eyeglasses",
+    "name": "Eyeglasses",
+    "modelUrl": "/glasses/eyeglasses.glb",
+    "thumbUrl": "/glasses/thumbs/eyeglasses.png",
+    "attribution": {
+      "creator": "User upload",
+      "license": "CC0-1.0",
+      "sourceUrl": ""
+    }
+  }
+]

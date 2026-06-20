@@ -1,0 +1,48 @@
+Glasses Assets — License & Provenance
+=====================================
+
+License: CC0 1.0 Universal (Public Domain Dedication)
+         https://creativecommons.org/publicdomain/zero/1.0/
+
+ALL .glb models and .png thumbnails in this folder are SELF-GENERATED
+procedurally for this project. None are downloaded from Sketchfab, Meshy, or any
+third party, so they carry no third-party licensing or attribution obligations.
+To the extent possible under law, the authors of this project have dedicated
+them to the public domain.
+
+Catalog (Story 06)
+------------------
+Eight distinct frame styles, each a binary GLB with a 2D PNG thumbnail:
+
+    aviator, wayfarer, round, rectangle, cat-eye, browline, rimless, oversized
+
+Each GLB follows the Story 05 authoring convention EXACTLY:
+- Units: metres. Outer temple-to-temple width = 0.14 m (140mm), asserted at
+  generation time via GLTFLoader.parse + Box3 (width == 140mm ± 1mm).
+- Origin: at the nose-bridge contact point (frontmost bridge centre at Z=0).
+- Forward axis: +Z (toward the face). +Y up, +X = model's right.
+
+How it was generated (reproducible)
+-----------------------------------
+Generated programmatically with three.js (GLTFExporter for GLBs; a dependency-
+free PNG encoder over Node's zlib for thumbnails) via the one-off script:
+
+    app/scripts/generate-catalog.mjs   (helper: app/scripts/lib/png.mjs)
+
+Regenerate from app/ with:
+
+    node scripts/generate-catalog.mjs
+
+WHY procedural (headless-environment deviation): the assets/glasses README
+assumes Sketchfab/Meshy downloads (login/API) and manual Blender normalization
+(GUI). Both are infeasible in this headless, no-GUI, no-login, no-GPU
+environment. Generating the catalog keeps it fully reproducible and CC0-clean.
+Thumbnails are SCHEMATIC 2D lens-silhouette renderings (not photoreal GLB
+renders), which is expected headlessly — a real GL-rendered 3/4 thumbnail is a
+future polish item once a GPU browser is available.
+
+placeholder.glb (Story 04)
+--------------------------
+The earlier crude placeholder (two torus lenses + bridge + temples), generated
+by app/scripts/generate-placeholder-glb.mjs. Retained for provenance; no longer
+referenced by the app (Story 06 replaced it with the catalog above).

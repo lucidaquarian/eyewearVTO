@@ -1,0 +1,40 @@
+/* Self-hosted font (CSP forbids the Google Fonts CDN the prototype used). */
+@import '@fontsource-variable/inter';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:      #FAFAF8;
+  --surface: #FFFFFF;
+  --ink:     #1A1A1A;
+  --muted:   #6B6B6B;
+  --border:  #E8E8E5;
+  --accent:  #1A1A1A;
+  --error:   #B3261E;
+  --success: #2E7D32;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:  #1A1A1A;
+    --ink: #FAFAF8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter Variable', Inter, system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+}
