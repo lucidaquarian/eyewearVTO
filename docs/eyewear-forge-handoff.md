@@ -274,7 +274,20 @@ real burden.
 
 ## 5. Spike plan (go/no-go — do this before building the service)
 
-**Budget: 3–4 days. Outcome: a decision, not a product.**
+> **Status update (2026-07-03): partially passed already.** Four real-SKU
+> frames (SPE20, SPE26, SPE52, SUN10 — now in the eyewearVTO catalog and in
+> `golden/reference/`) were produced with this parametric approach and came
+> out fully contract-conforming. That validates the **generation half**
+> (P5–P6): parametric output of real SKUs is achievable and VTO-ready.
+> What the spike still has to prove is the **extraction half** (P1–P4):
+> that lens contours, proportions, and materials can be derived from photos
+> *automatically*, rather than by a human (or an LLM session) eyeballing the
+> photo and writing parameters by hand. Spike days 1–2 below are therefore
+> the remaining go/no-go; days 3–4 (VTO load test + Meshy control) are
+> already answered and can be skipped.
+
+**Budget: 3–4 days (now ~2 days — see status above). Outcome: a decision,
+not a product.**
 
 1. **Day 1:** collect 10 real frame photos (varied: acetate wayfarer, thin
    metal round, rimless, cat-eye, sunglasses with dark lenses, a browline,

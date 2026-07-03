@@ -286,9 +286,12 @@ These don't belong to one phase; they gate the first sale.
 
 1. **VisionKart stack unknown** (0.1) — retire in Phase 0 before any Phase 1
    API decisions harden.
-2. **4a spike fails** — i.e. parametric output looks toy-like on real
-   branded frames. Mitigation: texture projection from the photo; fallback:
-   Meshy-API hybrid. The spike exists to find this out for ~4 days' cost.
+2. **4a spike fails** — *partially retired 2026-07-03*: four real-SKU
+   frames (SPE20/26/52, SUN10) were produced parametrically and verified
+   fully contract-conforming, so the generation half (P5–P6) is proven.
+   Residual risk is only the automated photo→parameters extraction
+   (P1–P4); the spike shrinks to ~2 days. Mitigation unchanged: texture
+   projection; Meshy-API hybrid as fallback.
 3. **Three.js double-bundling in the host** — silent breakage;
    `pnpm why three` check is part of the Phase 3 checklist.
 4. **Manual billing drift** — tripwire: 10 customers or 2 hrs/week.
