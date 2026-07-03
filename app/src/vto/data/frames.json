@@ -20,5 +20,49 @@
       "license": "CC0-1.0",
       "sourceUrl": ""
     }
+  },
+  {
+    "id": "spe20",
+    "name": "SPE20",
+    "modelUrl": "/glasses/spe20.glb",
+    "thumbUrl": "",
+    "attribution": {
+      "creator": "VisionKart catalog",
+      "license": "All rights reserved",
+      "sourceUrl": ""
+    }
+  },
+  {
+    "id": "spe26",
+    "name": "SPE26",
+    "modelUrl": "/glasses/spe26.glb",
+    "thumbUrl": "",
+    "attribution": {
+      "creator": "VisionKart catalog",
+      "license": "All rights reserved",
+      "sourceUrl": ""
+    }
+  },
+  {
+    "id": "spe52",
+    "name": "SPE52",
+    "modelUrl": "/glasses/spe52.glb",
+    "thumbUrl": "",
+    "attribution": {
+      "creator": "VisionKart catalog",
+      "license": "All rights reserved",
+      "sourceUrl": ""
+    }
+  },
+  {
+    "id": "sun10",
+    "name": "SUN10",
+    "modelUrl": "/glasses/sun10.glb",
+    "thumbUrl": "",
+    "attribution": {
+      "creator": "VisionKart catalog",
+      "license": "All rights reserved",
+      "sourceUrl": ""
+    }
   }
 ]

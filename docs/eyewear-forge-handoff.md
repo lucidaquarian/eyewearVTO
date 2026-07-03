@@ -261,6 +261,7 @@ real burden.
 | `app/scripts/verify-glb-analyzer.mjs` | `generator/test/analyzer.test.ts` | Its calibration asserts become the analyzer port's regression test. |
 | `app/scripts/generate-placeholder-glb.mjs` | reference only | FileReader shim for Node + GLTFExporter usage pattern. |
 | `app/public/glasses/sunglasses.glb`, `eyeglasses.glb` | `golden/reference/` | Known-good VTO frames; P6 must pass them; useful for calibrating temple templates. |
+| `app/public/glasses/spe20.glb`, `spe26.glb`, `spe52.glb`, `sun10.glb` | `golden/reference/` | Real-SKU frames, fully contract-conforming (verified: 140.0 mm, Z=0 front face, `Temple*`/`Earhook*` nodes, `lens_exterior`/`lens_interior` two-shell materials, 1.6–2.2k tris). The strongest calibration targets for the generator's output quality. |
 | §3 of this doc | `docs/SPEC.md` / `spec/frame-glb-spec.md` | The contract. Also *backport* it to eyewearVTO's docs so both repos cite the same versioned text. |
 
 ### 4.4 Dependencies (v1)
